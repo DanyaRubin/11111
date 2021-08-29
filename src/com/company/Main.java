@@ -11,15 +11,22 @@ public class Main {
         String[] result = str.split(" ");
         int a = Integer.parseInt(result[0]);
         int b = Integer.parseInt(result[2]);
-        String c = result[1];
-        if (c.contains("+"))  {
-            System.out.println(a + b);
-        } else if (c.contains("-")) {
+        String oper = result[1];
+
+        if (a <= 0 & b >= 10 || b >= 0 & a >= 10){
+            System.out.println("Ошибка, выбран не верный диапазон");
+        } else if (oper.contains("-")) {
             System.out.println(a - b);
-        } else if (c.contains("*")){
+        } else if (oper.contains("*")){
             System.out.println(a * b);
-        } else if (c.contains("/")){
+        } else if (oper.contains("/")) {
             System.out.println(a / b);
+        } else if (oper.contains("+"))  {
+            System.out.println(a + b);
         }
+
+
     }
+
 }
+
