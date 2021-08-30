@@ -5,13 +5,13 @@ import java.util.ArrayList;
 public class NumberConvert {
     public static String checkRome (String str) {
         if (str.contains("V")) {
-            romeToArab(str);
+            return String.valueOf(romeToArab(str) + 1);
         } else if (str.contains("I")) {
-            romeToArab(str);
+            return String.valueOf(romeToArab(str) + 1);
         } else if (str.contains("X")) {
-            romeToArab(str);
-        } return String.valueOf(romeToArab(str) + 1);
-
+            return String.valueOf(romeToArab(str) + 1);
+        }
+        return str;
     }
     public static int romeToArab(String str) {
         ArrayList<String> rome = new ArrayList<>();

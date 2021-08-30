@@ -14,7 +14,7 @@ public class Main {
             }
 
         String[] result = str.split(" ");
-            int a = parseInt (NumberConvert.checkRome(result[0]));
+            int a = parseInt(NumberConvert.checkRome(result[0]));
             int b = parseInt (NumberConvert.checkRome(result[2]));
         String operator = result[1];
         if (a == 0 || a >= 10 || b == 0 || b >= 10){
