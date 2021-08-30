@@ -19,6 +19,8 @@ public class Main {
         String operator = result[1];
         if (a == 0 || a > 10 || b == 0 || b > 10){
             System.out.println("Ошибка, выбран не верный диапазон");
+            System.out.println("Bye...");
+            break;
         } else if (operator.contains("-")){
             System.out.println(a - b);
         } else if (operator.contains("*")){
