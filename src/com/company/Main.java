@@ -17,7 +17,7 @@ public class Main {
             int a = parseInt(NumberConvert.checkRome(result[0]));
             int b = parseInt (NumberConvert.checkRome(result[2]));
         String operator = result[1];
-        if (a == 0 || a >= 10 || b == 0 || b >= 10){
+        if (a == 0 || a > 10 || b == 0 || b > 10){
             System.out.println("Ошибка, выбран не верный диапазон");
         } else if (operator.contains("-")){
             System.out.println(a - b);
