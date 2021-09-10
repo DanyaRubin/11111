@@ -55,7 +55,7 @@ public static void finalConvertArab(int a, int b, String str) {
         System.out.println(a - b);
     } else if (str.contains("*")) {
         System.out.println(a * b);
-    } else if (str.contains(" / ")) {
+    } else if (str.contains("/")) {
         System.out.println(a / b);
     } else if (str.contains("+")) {
         System.out.println(a + b);
@@ -66,13 +66,13 @@ public static void finalConvertRome(int a, int b, String str) {
     if (a == 0 || a > 10 || b == 0 || b > 10) {
         System.out.println("Ошибка, выбран не верный диапазон");
         System.out.println("Bye...");
-    } else if (str.contains("-")) {
+    } else if (str.equals("-")) {
         System.out.println(transform_number_to_roman_numeral(a - b));
-    } else if (str.contains("*")) {
+    } else if (str.equals("*")) {
         System.out.println(transform_number_to_roman_numeral(a * b));
-    } else if (str.contains(" / ")) {
+    } else if (str.equals("/")) {
         System.out.println(transform_number_to_roman_numeral(a / b));
-    } else if (str.contains("+")) {
+    } else if (str.equals("+")) {
         System.out.println(transform_number_to_roman_numeral(a + b));
     }
 }
@@ -95,7 +95,7 @@ public static void stopRome(String str) {
         System.out.println("Bye...");
         break;
     } else {
-        return;
+        break;
     }
 }
 }
