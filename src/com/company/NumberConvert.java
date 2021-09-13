@@ -63,10 +63,7 @@ public static void finalConvertArab(int a, int b, String str) {
 }
 
 public static void finalConvertRome(int a, int b, String str) {
-    if (a == 0 || a > 10 || b == 0 || b > 10) {
-        System.out.println("Ошибка, выбран не верный диапазон");
-        System.out.println("Bye...");
-    } else if (str.equals("-")) {
+       if (str.equals("-")) {
         System.out.println(transform_number_to_roman_numeral(a - b));
     } else if (str.equals("*")) {
         System.out.println(transform_number_to_roman_numeral(a * b));

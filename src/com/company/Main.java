@@ -23,11 +23,11 @@ public static void main(String[] args) {
         int b = parseInt(NumberConvert.checkRome(result[2]));
         String operator = result[1];
 
-        if (str.equals("V")) {
+        if (str.contains("V")) {
             NumberConvert.finalConvertRome(a, b, operator);
-        } else if (str.equals("I")) {
+        } else if (str.contains("I")) {
             NumberConvert.finalConvertRome(a, b, operator);
-        } else if (str.equals("X")) {
+        } else if (str.contains("X")) {
             NumberConvert.finalConvertRome(a, b, operator);
         } else {
             NumberConvert.finalConvertArab(a, b, operator);
